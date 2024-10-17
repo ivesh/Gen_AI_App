@@ -1,0 +1,10 @@
+streamlit==1.39.0
+protobuf==3.20
+altair==4.0
+click==8.0.4
+python-dotenv
+langchain_community
+langchain 
+langchain_core
+langchain_huggingface
+faiss-cpu
