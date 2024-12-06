@@ -97,13 +97,13 @@ gen_venv_3.10/
 - Select different pages for functionalities like chatbot history, language translation, or website Q&A.
 
 # File Descriptions
-1. main_page.py: This file serves as the entry point for the application and includes:
+1. **main_page.py:** This file serves as the entry point for the application and includes:
 
 - A simple Streamlit interface to accept user input.
 - LangChain prompts for user queries, processed with the Ollama LLAMA2 model.
 - An AI assistant to provide detailed responses to user questions.
 
-2. chatbot_history_llm.py: Handles chatbot functionality with session-based history. Key features include:
+2. **chatbot_history_llm.py:** Handles chatbot functionality with session-based history. Key features include:
 
 - Persistent Chat History: Uses LangChain's ChatMessageHistory to store and retrieve chat conversations.
 Role-Specific Responses: Allows users to set an AI "role" (e.g., Data Scientist) for custom interactions.
@@ -111,7 +111,7 @@ Message Trimming: Dynamically reduces the length of chat history while preservin
 - Groq Integration: Leverages Groq for fast and accurate LLM responses.
 - Streamlit Interface: A user-friendly interface for managing conversations and accessing history.
 
-3. language_translator.py: Provides advanced translation features using multiple LangChain techniques:
+3. **language_translator.py:** Provides advanced translation features using multiple LangChain techniques:
 
 - Choice-Based Translation: Users can select between different translation methods:
 System and human messages.
@@ -120,17 +120,17 @@ System and human messages.
 - Generic template-based prompts.
 - Streamlit UI: Includes input fields for source and target languages, as well as the text to be translated.
 
-4. website_q&a.py: Enables users to extract and query information from web pages. Features include:
+4. **website_q&a.py:** Enables users to extract and query information from web pages. Features include:
 
 - Document Loading and Splitting: Downloads web content and splits it into manageable chunks using RecursiveCharacterTextSplitter.
 - Document Embedding: Creates embeddings with HuggingFace's all-MiniLM-L6-v2 model and stores them in a FAISS vector database.
 - Context-Aware Q&A: Uses LangChain's retrieval chain to fetch relevant chunks and provide accurate answers to user queries.
 - Streamlit UI: A straightforward interface for entering website URLs and user queries.
 
-5. .env:
+5. **.env:**
 Contains sensitive information such as API keys and project names. This file is essential for running the application and must not be shared publicly.
 
-6. requirements.txt:
+6. **requirements.txt:**
 Specifies all required Python packages, including:
 
 - Streamlit
