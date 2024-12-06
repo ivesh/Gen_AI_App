@@ -24,21 +24,21 @@ This repository contains a Gen AI application built using **LangChain**, **Strea
 The project structure is organized as follows:
 
 
-bash
-Copy code
-gen_venv_3.10/
-│
-├── main_page/
-│   ├── pages/
-│   │   ├── chatbot_history_llm.py      # Handles chatbot history functionality
-│   │   ├── language_translator.py      # Implements language translation features
-│   │   ├── website_q&a.py              # Provides Q&A functionality for websites
-│   │   └── main_page.py                # Main entry point for the app
-│
-├── .env                                # Environment variables file
-├── .gitignore                          # Git ignore file
-├── README.md                           # Project documentation
-└── requirements.txt                    # Python dependencies
+    ```bash
+
+    gen_venv_3.10/
+    │
+    ├── main_page/
+    │   ├── pages/
+    │   │   ├── chatbot_history_llm.py      # Handles chatbot history functionality
+    │   │   ├── language_translator.py      # Implements language translation features
+    │   │   ├── website_q&a.py              # Provides Q&A functionality for websites
+    │   │   └── main_page.py                # Main entry point for the app
+    │
+    ├── .env                                # Environment variables file
+    ├── .gitignore                          # Git ignore file
+    ├── README.md                           # Project documentation
+    └── requirements.txt                    # Python dependencies
 
 
 ---
