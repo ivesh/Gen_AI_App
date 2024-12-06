@@ -89,6 +89,8 @@ The project structure is organized as follows:
     LANGCHAIN_PROJECT=your_project_name
 5. Run the app:
     ```bash
+    streamlit run main_page/main_page.py
+
 
 
 # Usage
