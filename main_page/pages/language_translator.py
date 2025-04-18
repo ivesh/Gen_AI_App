@@ -12,7 +12,7 @@ groq_api_key = os.getenv("GROQ_API_KEY")
 
 def initialize_llm():
     """Initialize the LLM using the Groq"""
-    model = ChatGroq(model="Gemma2-9b-It", groq_api_key=groq_api_key)
+    model = ChatGroq(model="gemma2-9b-it", groq_api_key=groq_api_key)
     return model
 
 def behaviour_llm(model, choice, language, text):

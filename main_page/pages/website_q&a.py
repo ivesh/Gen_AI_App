@@ -16,7 +16,7 @@ load_dotenv()
 # Initialize global variables for embeddings and LLM
 def initialize_embeddings():
     """Initialize the HuggingFace embeddings model."""
-    return HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    return HuggingFaceEmbeddings(model_name="gemma2-9b-it")
 
 def initialize_llm():
     """Initialize the LLM using the Ollama model."""

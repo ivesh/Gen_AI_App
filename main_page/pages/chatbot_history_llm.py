@@ -18,7 +18,7 @@ load_dotenv()
 def initialize_llm():
     """Calling the llm from Groq"""
     groq_api_key = os.getenv("GROQ_API_KEY")
-    llm = ChatGroq(model="mixtral-8x7b-32768", groq_api_key=groq_api_key)
+    llm = ChatGroq(model="gemma2-9b-it", groq_api_key=groq_api_key)
     return llm
 
 # Function to define a chat prompt with LLM
