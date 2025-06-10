@@ -16,11 +16,11 @@ load_dotenv()
 # Initialize global variables for embeddings and LLM
 def initialize_embeddings():
     """Initialize the HuggingFace embeddings model."""
-    return HuggingFaceEmbeddings(model_name="gemma2-9b-it")
+    return HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 def initialize_llm():
     """Initialize the LLM using the Ollama model."""
-    return Ollama(model="llama2")
+    return Ollama(model="Qwen/Qwen2.5-Omni-7B")
 
 # Load the document from the web
 def load_and_split_document(url):

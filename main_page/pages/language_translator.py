@@ -21,14 +21,14 @@ def behaviour_llm(model, choice, language, text):
     
     if choice == 1:
         messages = [
-            SystemMessage(content=f"Translate the following from English to {language}"),
+            SystemMessage(content=f"Translate the following from Hindi to {language}"),
             HumanMessage(content=text)
         ]
         result = model.invoke(messages)
 
     elif choice == 2:
         messages = [
-            SystemMessage(content=f"Translate the following from English to {language}"),
+            SystemMessage(content=f"Translate the following from Hindi to {language}"),
             HumanMessage(content=text)
         ]
         result = model.invoke(messages)
