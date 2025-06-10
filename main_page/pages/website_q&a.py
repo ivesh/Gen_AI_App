@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain_community.llms import Ollama
+#from langchain_community.llms import Ollama
+from langchain_ollama import OllamaLLM
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.chains import create_retrieval_chain
@@ -20,7 +21,7 @@ def initialize_embeddings():
 
 def initialize_llm():
     """Initialize the LLM using the Ollama model."""
-    return Ollama(model="Qwen/Qwen2.5-Omni-7B")
+    return OllamaLLM(model="Qwen/Qwen2.5-Omni-7B")
 
 # Load the document from the web
 def load_and_split_document(url):

@@ -9,3 +9,4 @@ langchain_core
 langchain_huggingface
 faiss-cpu
 langchain-groq
+langchain-ollama

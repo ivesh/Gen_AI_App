@@ -68,13 +68,13 @@ def main():
     # Sidebar for additional info
     st.sidebar.markdown("### How to Use:")
     st.sidebar.markdown("""
-    Step 1. Enter a language in which you want to convert your text.
-    Step 2. Enter the text to be converted.
-    Step 3. Get an AI-generated answer based on the choice of Langchain expression to be used. The choices are:
-    1. Result from system message and human message.
-    2. Result from system message and human message with output parser.
-    3. Result from system message and human message with output parser and model.
-    4. Result from system message and human message with output parser and model with generic template.
+    Step 1. Enter a language in which you want to convert your text. \n
+    Step 2. Enter the text to be converted. \n
+    Step 3. Get an AI-generated answer based on the choice of Langchain expression to be used. The choices are:\n
+    1. Result from system message and human message.\n
+    2. Result from system message and human message with output parser.\n
+    3. Result from system message and human message with output parser and model. \n
+    4. Result from system message and human message with output parser and model with generic template.\n
     """)
 
     # Initialize the LLM
